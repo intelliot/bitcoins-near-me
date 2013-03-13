@@ -36,6 +36,7 @@
 		A98E7D1316F1230C001DFB2C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7D1216F1230C001DFB2C /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A98E7D1516F12316001DFB2C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7D1416F12316001DFB2C /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A98E7D1716F1231F001DFB2C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7D1616F1231F001DFB2C /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A98E7D1A16F12A4B001DFB2C /* UpdatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D1916F12A4B001DFB2C /* UpdatePostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		A98E7D1216F1230C001DFB2C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		A98E7D1416F12316001DFB2C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A98E7D1616F1231F001DFB2C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A98E7D1816F12A4B001DFB2C /* UpdatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdatePostViewController.h; sourceTree = "<group>"; };
+		A98E7D1916F12A4B001DFB2C /* UpdatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +180,8 @@
 				A98E7CA316F0D155001DFB2C /* ELViewController.m */,
 				A98E7C8E16F0D155001DFB2C /* Supporting Files */,
 				A98E7D1116F122A1001DFB2C /* PrivateKeys.h */,
+				A98E7D1816F12A4B001DFB2C /* UpdatePostViewController.h */,
+				A98E7D1916F12A4B001DFB2C /* UpdatePostViewController.m */,
 			);
 			path = BitcoinsNearMe;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				A98E7C9416F0D155001DFB2C /* main.m in Sources */,
 				A98E7C9816F0D155001DFB2C /* ELAppDelegate.m in Sources */,
 				A98E7CA416F0D155001DFB2C /* ELViewController.m in Sources */,
+				A98E7D1A16F12A4B001DFB2C /* UpdatePostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

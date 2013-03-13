@@ -7,7 +7,6 @@
 //
 
 #import "ELViewController.h"
-#import <Parse/Parse.h>
 
 @interface ELViewController ()
 
@@ -19,10 +18,69 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        [self performSegueWithIdentifier:@"loginComplete" sender:self];
+    } else {
+        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+        [logInViewController setDelegate:self];
+        
+        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+        [signUpViewController setDelegate:self];
+        
+        [logInViewController setSignUpController:signUpViewController];
+        
+        [self presentViewController:logInViewController animated:YES completion:NULL];
+    }
+}
+
+- (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password
+{
+    if ([username length] && [password length]) {
+        return YES;
+    }
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
+    [[[UIAlertView alloc] initWithTitle:@"Missing Information"
+                                message:@"Both fields are required"
+                               delegate:nil
+                      cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    return NO;
+}
+
+- (BOOL)signUpViewController:(PFSignUpViewController *)signUpController shouldBeginSignUp:(NSDictionary *)info {
+    BOOL informationComplete = YES;
+    
+    // loop through all of the submitted data
+    for (id key in info) {
+        NSString *field = [info objectForKey:key];
+        if (![field length]) {
+            informationComplete = NO;
+            break;
+        }
+    }
+    
+    // Display an alert if a field wasn't completed
+    if (!informationComplete) {
+        [[[UIAlertView alloc] initWithTitle:@"Missing Information"
+                                    message:@"Make sure you fill out all of the information!"
+                                   delegate:nil
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil] show];
+    }
+    
+    return informationComplete;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"loginComplete"])
+    {
+        //segue.destinationViewController.user
+    }
 }
 
 - (void)didReceiveMemoryWarning
