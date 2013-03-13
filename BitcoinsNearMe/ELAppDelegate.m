@@ -7,12 +7,20 @@
 //
 
 #import "ELAppDelegate.h"
+#import <Parse/Parse.h>
+
+// define PARSE_APPLICATION_ID and PARSE_CLIENT_KEY in this file:
+#import "PrivateKeys.h"
 
 @implementation ELAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [Parse setApplicationId:PARSE_APPLICATION_ID
+                  clientKey:PARSE_CLIENT_KEY];
+    
     return YES;
 }
 							
