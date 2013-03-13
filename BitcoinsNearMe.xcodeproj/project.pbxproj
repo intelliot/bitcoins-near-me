@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A98E7C8816F0D155001DFB2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7C8716F0D155001DFB2C /* UIKit.framework */; };
+		A98E7C8A16F0D155001DFB2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7C8916F0D155001DFB2C /* Foundation.framework */; };
+		A98E7C8C16F0D155001DFB2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7C8B16F0D155001DFB2C /* CoreGraphics.framework */; };
+		A98E7C9216F0D155001DFB2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A98E7C9016F0D155001DFB2C /* InfoPlist.strings */; };
+		A98E7C9416F0D155001DFB2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7C9316F0D155001DFB2C /* main.m */; };
+		A98E7C9816F0D155001DFB2C /* ELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7C9716F0D155001DFB2C /* ELAppDelegate.m */; };
+		A98E7C9A16F0D155001DFB2C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A98E7C9916F0D155001DFB2C /* Default.png */; };
+		A98E7C9C16F0D155001DFB2C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A98E7C9B16F0D155001DFB2C /* Default@2x.png */; };
+		A98E7C9E16F0D155001DFB2C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A98E7C9D16F0D155001DFB2C /* Default-568h@2x.png */; };
+		A98E7CA116F0D155001DFB2C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98E7C9F16F0D155001DFB2C /* MainStoryboard.storyboard */; };
+		A98E7CA416F0D155001DFB2C /* ELViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7CA316F0D155001DFB2C /* ELViewController.m */; };
+		A98E7CAC16F0D155001DFB2C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7CAB16F0D155001DFB2C /* SenTestingKit.framework */; };
+		A98E7CAD16F0D155001DFB2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7C8716F0D155001DFB2C /* UIKit.framework */; };
+		A98E7CAE16F0D155001DFB2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7C8916F0D155001DFB2C /* Foundation.framework */; };
+		A98E7CB616F0D155001DFB2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A98E7CB416F0D155001DFB2C /* InfoPlist.strings */; };
+		A98E7CB916F0D155001DFB2C /* BitcoinsNearMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7CB816F0D155001DFB2C /* BitcoinsNearMeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A98E7CAF16F0D155001DFB2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A98E7C7C16F0D155001DFB2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A98E7C8316F0D155001DFB2C;
+			remoteInfo = BitcoinsNearMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A98E7C8416F0D155001DFB2C /* BitcoinsNearMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinsNearMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98E7C8716F0D155001DFB2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A98E7C8916F0D155001DFB2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A98E7C8B16F0D155001DFB2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A98E7C8F16F0D155001DFB2C /* BitcoinsNearMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BitcoinsNearMe-Info.plist"; sourceTree = "<group>"; };
+		A98E7C9116F0D155001DFB2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A98E7C9316F0D155001DFB2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A98E7C9516F0D155001DFB2C /* BitcoinsNearMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitcoinsNearMe-Prefix.pch"; sourceTree = "<group>"; };
+		A98E7C9616F0D155001DFB2C /* ELAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELAppDelegate.h; sourceTree = "<group>"; };
+		A98E7C9716F0D155001DFB2C /* ELAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAppDelegate.m; sourceTree = "<group>"; };
+		A98E7C9916F0D155001DFB2C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A98E7C9B16F0D155001DFB2C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A98E7C9D16F0D155001DFB2C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A98E7CA016F0D155001DFB2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A98E7CA216F0D155001DFB2C /* ELViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELViewController.h; sourceTree = "<group>"; };
+		A98E7CA316F0D155001DFB2C /* ELViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELViewController.m; sourceTree = "<group>"; };
+		A98E7CAA16F0D155001DFB2C /* BitcoinsNearMeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinsNearMeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98E7CAB16F0D155001DFB2C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A98E7CB316F0D155001DFB2C /* BitcoinsNearMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BitcoinsNearMeTests-Info.plist"; sourceTree = "<group>"; };
+		A98E7CB516F0D155001DFB2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A98E7CB716F0D155001DFB2C /* BitcoinsNearMeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitcoinsNearMeTests.h; sourceTree = "<group>"; };
+		A98E7CB816F0D155001DFB2C /* BitcoinsNearMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitcoinsNearMeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A98E7C8116F0D155001DFB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98E7C8816F0D155001DFB2C /* UIKit.framework in Frameworks */,
+				A98E7C8A16F0D155001DFB2C /* Foundation.framework in Frameworks */,
+				A98E7C8C16F0D155001DFB2C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98E7CA616F0D155001DFB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98E7CAC16F0D155001DFB2C /* SenTestingKit.framework in Frameworks */,
+				A98E7CAD16F0D155001DFB2C /* UIKit.framework in Frameworks */,
+				A98E7CAE16F0D155001DFB2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A98E7C7B16F0D155001DFB2C = {
+			isa = PBXGroup;
+			children = (
+				A98E7C8D16F0D155001DFB2C /* BitcoinsNearMe */,
+				A98E7CB116F0D155001DFB2C /* BitcoinsNearMeTests */,
+				A98E7C8616F0D155001DFB2C /* Frameworks */,
+				A98E7C8516F0D155001DFB2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A98E7C8516F0D155001DFB2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7C8416F0D155001DFB2C /* BitcoinsNearMe.app */,
+				A98E7CAA16F0D155001DFB2C /* BitcoinsNearMeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A98E7C8616F0D155001DFB2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7C8716F0D155001DFB2C /* UIKit.framework */,
+				A98E7C8916F0D155001DFB2C /* Foundation.framework */,
+				A98E7C8B16F0D155001DFB2C /* CoreGraphics.framework */,
+				A98E7CAB16F0D155001DFB2C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A98E7C8D16F0D155001DFB2C /* BitcoinsNearMe */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7C9616F0D155001DFB2C /* ELAppDelegate.h */,
+				A98E7C9716F0D155001DFB2C /* ELAppDelegate.m */,
+				A98E7C9F16F0D155001DFB2C /* MainStoryboard.storyboard */,
+				A98E7CA216F0D155001DFB2C /* ELViewController.h */,
+				A98E7CA316F0D155001DFB2C /* ELViewController.m */,
+				A98E7C8E16F0D155001DFB2C /* Supporting Files */,
+			);
+			path = BitcoinsNearMe;
+			sourceTree = "<group>";
+		};
+		A98E7C8E16F0D155001DFB2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7C8F16F0D155001DFB2C /* BitcoinsNearMe-Info.plist */,
+				A98E7C9016F0D155001DFB2C /* InfoPlist.strings */,
+				A98E7C9316F0D155001DFB2C /* main.m */,
+				A98E7C9516F0D155001DFB2C /* BitcoinsNearMe-Prefix.pch */,
+				A98E7C9916F0D155001DFB2C /* Default.png */,
+				A98E7C9B16F0D155001DFB2C /* Default@2x.png */,
+				A98E7C9D16F0D155001DFB2C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A98E7CB116F0D155001DFB2C /* BitcoinsNearMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7CB716F0D155001DFB2C /* BitcoinsNearMeTests.h */,
+				A98E7CB816F0D155001DFB2C /* BitcoinsNearMeTests.m */,
+				A98E7CB216F0D155001DFB2C /* Supporting Files */,
+			);
+			path = BitcoinsNearMeTests;
+			sourceTree = "<group>";
+		};
+		A98E7CB216F0D155001DFB2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7CB316F0D155001DFB2C /* BitcoinsNearMeTests-Info.plist */,
+				A98E7CB416F0D155001DFB2C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A98E7C8316F0D155001DFB2C /* BitcoinsNearMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98E7CBC16F0D155001DFB2C /* Build configuration list for PBXNativeTarget "BitcoinsNearMe" */;
+			buildPhases = (
+				A98E7C8016F0D155001DFB2C /* Sources */,
+				A98E7C8116F0D155001DFB2C /* Frameworks */,
+				A98E7C8216F0D155001DFB2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitcoinsNearMe;
+			productName = BitcoinsNearMe;
+			productReference = A98E7C8416F0D155001DFB2C /* BitcoinsNearMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A98E7CA916F0D155001DFB2C /* BitcoinsNearMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98E7CBF16F0D155001DFB2C /* Build configuration list for PBXNativeTarget "BitcoinsNearMeTests" */;
+			buildPhases = (
+				A98E7CA516F0D155001DFB2C /* Sources */,
+				A98E7CA616F0D155001DFB2C /* Frameworks */,
+				A98E7CA716F0D155001DFB2C /* Resources */,
+				A98E7CA816F0D155001DFB2C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A98E7CB016F0D155001DFB2C /* PBXTargetDependency */,
+			);
+			name = BitcoinsNearMeTests;
+			productName = BitcoinsNearMeTests;
+			productReference = A98E7CAA16F0D155001DFB2C /* BitcoinsNearMeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A98E7C7C16F0D155001DFB2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Grenly;
+			};
+			buildConfigurationList = A98E7C7F16F0D155001DFB2C /* Build configuration list for PBXProject "BitcoinsNearMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A98E7C7B16F0D155001DFB2C;
+			productRefGroup = A98E7C8516F0D155001DFB2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A98E7C8316F0D155001DFB2C /* BitcoinsNearMe */,
+				A98E7CA916F0D155001DFB2C /* BitcoinsNearMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A98E7C8216F0D155001DFB2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98E7C9216F0D155001DFB2C /* InfoPlist.strings in Resources */,
+				A98E7C9A16F0D155001DFB2C /* Default.png in Resources */,
+				A98E7C9C16F0D155001DFB2C /* Default@2x.png in Resources */,
+				A98E7C9E16F0D155001DFB2C /* Default-568h@2x.png in Resources */,
+				A98E7CA116F0D155001DFB2C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98E7CA716F0D155001DFB2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98E7CB616F0D155001DFB2C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A98E7CA816F0D155001DFB2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A98E7C8016F0D155001DFB2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98E7C9416F0D155001DFB2C /* main.m in Sources */,
+				A98E7C9816F0D155001DFB2C /* ELAppDelegate.m in Sources */,
+				A98E7CA416F0D155001DFB2C /* ELViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98E7CA516F0D155001DFB2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98E7CB916F0D155001DFB2C /* BitcoinsNearMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A98E7CB016F0D155001DFB2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A98E7C8316F0D155001DFB2C /* BitcoinsNearMe */;
+			targetProxy = A98E7CAF16F0D155001DFB2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A98E7C9016F0D155001DFB2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98E7C9116F0D155001DFB2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A98E7C9F16F0D155001DFB2C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98E7CA016F0D155001DFB2C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A98E7CB416F0D155001DFB2C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98E7CB516F0D155001DFB2C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A98E7CBA16F0D155001DFB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A98E7CBB16F0D155001DFB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A98E7CBD16F0D155001DFB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitcoinsNearMe/BitcoinsNearMe-Prefix.pch";
+				INFOPLIST_FILE = "BitcoinsNearMe/BitcoinsNearMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A98E7CBE16F0D155001DFB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitcoinsNearMe/BitcoinsNearMe-Prefix.pch";
+				INFOPLIST_FILE = "BitcoinsNearMe/BitcoinsNearMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A98E7CC016F0D155001DFB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BitcoinsNearMe.app/BitcoinsNearMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitcoinsNearMe/BitcoinsNearMe-Prefix.pch";
+				INFOPLIST_FILE = "BitcoinsNearMeTests/BitcoinsNearMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A98E7CC116F0D155001DFB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BitcoinsNearMe.app/BitcoinsNearMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BitcoinsNearMe/BitcoinsNearMe-Prefix.pch";
+				INFOPLIST_FILE = "BitcoinsNearMeTests/BitcoinsNearMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A98E7C7F16F0D155001DFB2C /* Build configuration list for PBXProject "BitcoinsNearMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98E7CBA16F0D155001DFB2C /* Debug */,
+				A98E7CBB16F0D155001DFB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98E7CBC16F0D155001DFB2C /* Build configuration list for PBXNativeTarget "BitcoinsNearMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98E7CBD16F0D155001DFB2C /* Debug */,
+				A98E7CBE16F0D155001DFB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A98E7CBF16F0D155001DFB2C /* Build configuration list for PBXNativeTarget "BitcoinsNearMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98E7CC016F0D155001DFB2C /* Debug */,
+				A98E7CC116F0D155001DFB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A98E7C7C16F0D155001DFB2C /* Project object */;
+}
