@@ -7,7 +7,6 @@
 //
 
 #import "ELPost.h"
-#import <Parse/Parse.h>
 
 @implementation ELPost
 
@@ -29,6 +28,11 @@
         }];
     }
     return self;
+}
+
+- (PFGeoPoint *)location
+{
+    return [self.object objectForKey:@"location"];
 }
 
 @end

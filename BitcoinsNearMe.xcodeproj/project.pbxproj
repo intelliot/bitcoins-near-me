@@ -41,6 +41,8 @@
 		A98E7D1E16F1950A001DFB2C /* USStateAbbreviations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A98E7D1D16F1950A001DFB2C /* USStateAbbreviations.plist */; };
 		A98E7D2116F19EA4001DFB2C /* SaveAndDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D2016F19EA4001DFB2C /* SaveAndDisplayViewController.m */; };
 		A98E7D2516F19F8F001DFB2C /* ELPost.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D2416F19F8F001DFB2C /* ELPost.m */; };
+		A98E7D2A16F28A9F001DFB2C /* GeoPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D2916F28A9F001DFB2C /* GeoPointAnnotation.m */; };
+		A98E7D2C16F28C1E001DFB2C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7D2B16F28C1E001DFB2C /* MapKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,9 @@
 		A98E7D2016F19EA4001DFB2C /* SaveAndDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveAndDisplayViewController.m; sourceTree = "<group>"; };
 		A98E7D2316F19F8F001DFB2C /* ELPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELPost.h; sourceTree = "<group>"; };
 		A98E7D2416F19F8F001DFB2C /* ELPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELPost.m; sourceTree = "<group>"; };
+		A98E7D2816F28A9F001DFB2C /* GeoPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoPointAnnotation.h; sourceTree = "<group>"; };
+		A98E7D2916F28A9F001DFB2C /* GeoPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoPointAnnotation.m; sourceTree = "<group>"; };
+		A98E7D2B16F28C1E001DFB2C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98E7D2C16F28C1E001DFB2C /* MapKit.framework in Frameworks */,
 				A98E7D1C16F17EDE001DFB2C /* AddressBookUI.framework in Frameworks */,
 				A98E7D1716F1231F001DFB2C /* Accounts.framework in Frameworks */,
 				A98E7D1516F12316001DFB2C /* Social.framework in Frameworks */,
@@ -160,6 +166,7 @@
 		A98E7C8616F0D155001DFB2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A98E7D2B16F28C1E001DFB2C /* MapKit.framework */,
 				A98E7D1B16F17EDE001DFB2C /* AddressBookUI.framework */,
 				A98E7D1616F1231F001DFB2C /* Accounts.framework */,
 				A98E7D1416F12316001DFB2C /* Social.framework */,
@@ -185,6 +192,7 @@
 		A98E7C8D16F0D155001DFB2C /* BitcoinsNearMe */ = {
 			isa = PBXGroup;
 			children = (
+				A98E7D2716F28A9F001DFB2C /* External */,
 				A98E7D2216F19ED5001DFB2C /* Model */,
 				A98E7C9616F0D155001DFB2C /* ELAppDelegate.h */,
 				A98E7C9716F0D155001DFB2C /* ELAppDelegate.m */,
@@ -242,6 +250,15 @@
 				A98E7D2416F19F8F001DFB2C /* ELPost.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A98E7D2716F28A9F001DFB2C /* External */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7D2816F28A9F001DFB2C /* GeoPointAnnotation.h */,
+				A98E7D2916F28A9F001DFB2C /* GeoPointAnnotation.m */,
+			);
+			path = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +379,7 @@
 				A98E7D1A16F12A4B001DFB2C /* UpdatePostViewController.m in Sources */,
 				A98E7D2116F19EA4001DFB2C /* SaveAndDisplayViewController.m in Sources */,
 				A98E7D2516F19F8F001DFB2C /* ELPost.m in Sources */,
+				A98E7D2A16F28A9F001DFB2C /* GeoPointAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

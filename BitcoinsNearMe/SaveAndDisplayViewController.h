@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @class ELPost;
 
-@interface SaveAndDisplayViewController : UIViewController
+@interface SaveAndDisplayViewController : UIViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic) ELPost *post;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

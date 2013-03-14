@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
 
-@class PFObject;
-@class PFUser;
 @class CLLocation;
 
 @interface ELPost : NSObject
@@ -17,5 +16,6 @@
 @property (strong, nonatomic) PFObject *object;
 
 - (id)initWithUser:(PFUser *)user location:(CLLocation *)location;
+- (PFGeoPoint *)location;
 
 @end

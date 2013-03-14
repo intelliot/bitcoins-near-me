@@ -8,6 +8,8 @@
 
 #import "SaveAndDisplayViewController.h"
 #import "ELPost.h"
+#import <Parse/Parse.h>
+#import "GeoPointAnnotation.h"
 
 @interface SaveAndDisplayViewController ()
 
@@ -28,6 +30,36 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    PFGeoPoint *geoPoint = [self.post location];
+    
+    // center the map around the geopoint
+    [self.mapView setRegion:MKCoordinateRegionMake(
+       CLLocationCoordinate2DMake(geoPoint.latitude, geoPoint.longitude),
+       MKCoordinateSpanMake(0.01, 0.01)
+       )];
+    
+    GeoPointAnnotation *annotation = [[GeoPointAnnotation alloc] initWithObject:self.post.object];
+    [self.mapView addAnnotation:annotation];
+}
+
+// from Geolocations by Parse
+#pragma mark - MKMapViewDelegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    static NSString *GeoPointAnnotationIdentifier = @"RedPin";
+    
+    MKPinAnnotationView *annotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:GeoPointAnnotationIdentifier];
+    
+    if (!annotationView) {
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:GeoPointAnnotationIdentifier];
+        annotationView.pinColor = MKPinAnnotationColorRed;
+        annotationView.canShowCallout = YES;
+        annotationView.draggable = YES;
+        annotationView.animatesDrop = YES;
+    }
+    
+    return annotationView;
 }
 
 - (void)didReceiveMemoryWarning
