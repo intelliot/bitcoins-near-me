@@ -39,6 +39,8 @@
 		A98E7D1A16F12A4B001DFB2C /* UpdatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D1916F12A4B001DFB2C /* UpdatePostViewController.m */; };
 		A98E7D1C16F17EDE001DFB2C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98E7D1B16F17EDE001DFB2C /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A98E7D1E16F1950A001DFB2C /* USStateAbbreviations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A98E7D1D16F1950A001DFB2C /* USStateAbbreviations.plist */; };
+		A98E7D2116F19EA4001DFB2C /* SaveAndDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D2016F19EA4001DFB2C /* SaveAndDisplayViewController.m */; };
+		A98E7D2516F19F8F001DFB2C /* ELPost.m in Sources */ = {isa = PBXBuildFile; fileRef = A98E7D2416F19F8F001DFB2C /* ELPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,10 @@
 		A98E7D1916F12A4B001DFB2C /* UpdatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdatePostViewController.m; sourceTree = "<group>"; };
 		A98E7D1B16F17EDE001DFB2C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		A98E7D1D16F1950A001DFB2C /* USStateAbbreviations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USStateAbbreviations.plist; sourceTree = "<group>"; };
+		A98E7D1F16F19EA4001DFB2C /* SaveAndDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveAndDisplayViewController.h; sourceTree = "<group>"; };
+		A98E7D2016F19EA4001DFB2C /* SaveAndDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveAndDisplayViewController.m; sourceTree = "<group>"; };
+		A98E7D2316F19F8F001DFB2C /* ELPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELPost.h; sourceTree = "<group>"; };
+		A98E7D2416F19F8F001DFB2C /* ELPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,7 @@
 		A98E7C8D16F0D155001DFB2C /* BitcoinsNearMe */ = {
 			isa = PBXGroup;
 			children = (
+				A98E7D2216F19ED5001DFB2C /* Model */,
 				A98E7C9616F0D155001DFB2C /* ELAppDelegate.h */,
 				A98E7C9716F0D155001DFB2C /* ELAppDelegate.m */,
 				A98E7C9F16F0D155001DFB2C /* MainStoryboard.storyboard */,
@@ -189,6 +196,8 @@
 				A98E7D1816F12A4B001DFB2C /* UpdatePostViewController.h */,
 				A98E7D1916F12A4B001DFB2C /* UpdatePostViewController.m */,
 				A98E7D1D16F1950A001DFB2C /* USStateAbbreviations.plist */,
+				A98E7D1F16F19EA4001DFB2C /* SaveAndDisplayViewController.h */,
+				A98E7D2016F19EA4001DFB2C /* SaveAndDisplayViewController.m */,
 			);
 			path = BitcoinsNearMe;
 			sourceTree = "<group>";
@@ -224,6 +233,15 @@
 				A98E7CB416F0D155001DFB2C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A98E7D2216F19ED5001DFB2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7D2316F19F8F001DFB2C /* ELPost.h */,
+				A98E7D2416F19F8F001DFB2C /* ELPost.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +360,8 @@
 				A98E7C9816F0D155001DFB2C /* ELAppDelegate.m in Sources */,
 				A98E7CA416F0D155001DFB2C /* ELViewController.m in Sources */,
 				A98E7D1A16F12A4B001DFB2C /* UpdatePostViewController.m in Sources */,
+				A98E7D2116F19EA4001DFB2C /* SaveAndDisplayViewController.m in Sources */,
+				A98E7D2516F19F8F001DFB2C /* ELPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

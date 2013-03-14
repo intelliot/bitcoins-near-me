@@ -9,6 +9,8 @@
 #import "UpdatePostViewController.h"
 #import <Parse/Parse.h>
 #import <AddressBookUI/AddressBookUI.h>
+#import "ELPost.h"
+#import "SaveAndDisplayViewController.h"
 
 @interface UpdatePostViewController ()
 
@@ -95,6 +97,15 @@
         }];
         
         //TODO: enable Post/Update button
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"readyToPost"])
+    {
+        ELPost *post = [[ELPost alloc] initWithUser:[PFUser currentUser] location:self.location];
+        [(SaveAndDisplayViewController *)segue.destinationViewController setPost:post];
     }
 }
 
