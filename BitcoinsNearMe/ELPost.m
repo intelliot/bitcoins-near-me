@@ -21,7 +21,10 @@
         [self.object setObject:geoPoint forKey:@"location"];
         [self.object saveEventually:^(BOOL succeeded, NSError *error) {
             if (succeeded) {
-                NSLog(@"succeeded");
+                NSLog(@"succeeded. updatedAt = %@", self.object.updatedAt);
+                
+                // update GeoPoint
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"geoPointAnnotiationUpdated" object:self.object];
             } else {
                 NSLog(@"failed");
             }
@@ -33,6 +36,11 @@
 - (PFGeoPoint *)location
 {
     return [self.object objectForKey:@"location"];
+}
+
+- (id)objectForKey:(NSString *)key
+{
+    return [self.object objectForKey:key];
 }
 
 @end

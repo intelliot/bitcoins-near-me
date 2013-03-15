@@ -12,7 +12,7 @@
 #import "GeoPointAnnotation.h"
 
 @interface SaveAndDisplayViewController ()
-
+- (void)updateMap;
 @end
 
 @implementation SaveAndDisplayViewController
@@ -30,6 +30,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self updateMap];
+}
+
+- (void)setPost:(ELPost *)post
+{
+    if (_post != post) {
+        _post = post;
+        [self updateMap];
+    }
+}
+
+- (void)updateMap
+{
+    [self.mapView removeAnnotations:self.mapView.annotations];
     
     PFGeoPoint *geoPoint = [self.post location];
     

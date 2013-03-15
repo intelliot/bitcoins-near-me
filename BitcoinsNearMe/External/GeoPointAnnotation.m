@@ -10,10 +10,16 @@
 
 @interface GeoPointAnnotation()
 @property (nonatomic, strong) PFObject *object;
+- (void)updateAnnotation;
 @end
 
 @implementation GeoPointAnnotation
 
+#pragma mark - NSObject
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"geoPointAnnotiationUpdated" object:nil];
+}
 
 #pragma mark - Initialization
 
@@ -24,6 +30,9 @@
         
         PFGeoPoint *geoPoint = self.object[@"location"];
         [self setGeoPoint:geoPoint];
+        
+        // Listen for annotation updates. Triggers a refresh whenever an annotation is dragged and dropped.
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateAnnotation) name:@"geoPointAnnotiationUpdated" object:nil];
     }
     return self;
 }
@@ -50,6 +59,11 @@
 - (void)setGeoPoint:(PFGeoPoint *)geoPoint {
     _coordinate = CLLocationCoordinate2DMake(geoPoint.latitude, geoPoint.longitude);
     
+    [self updateAnnotation];
+}
+
+- (void)updateAnnotation
+{
     static NSDateFormatter *dateFormatter = nil;
     if (dateFormatter == nil) {
         dateFormatter = [[NSDateFormatter alloc] init];
@@ -64,9 +78,13 @@
         numberFormatter.maximumFractionDigits = 3;
     }
     
+    // callout won't work if title is nil
     _title = [dateFormatter stringFromDate:self.object.updatedAt];
-    _subtitle = [NSString stringWithFormat:@"%@, %@", [numberFormatter stringFromNumber:[NSNumber numberWithDouble:geoPoint.latitude]],
-                 [numberFormatter stringFromNumber:[NSNumber numberWithDouble:geoPoint.longitude]]];    
+    if (![_title length]) {
+        _title = @"Not yet saved";
+    }
+    _subtitle = [NSString stringWithFormat:@"%@, %@", [numberFormatter stringFromNumber:[NSNumber numberWithDouble:_coordinate.latitude]],
+                 [numberFormatter stringFromNumber:[NSNumber numberWithDouble:_coordinate.longitude]]];
 }
 
 @end
